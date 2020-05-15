@@ -2,6 +2,7 @@
 const merge = require('webpack-merge');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const commonConfig = require('./webpack.config.common');
 
@@ -33,5 +34,6 @@ module.exports = merge(commonConfig, {
             filename: '[name].css',
             chunkFilename: '[id].css',
         }),
+        new ReactRefreshWebpackPlugin(),
     ],
 });

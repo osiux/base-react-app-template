@@ -7,7 +7,8 @@ I don't want to spend much time with the initial setup for a React app, so this 
 ## What does it include?
 
 - Typescript
-- Emotion
+- TailwindCSS
+- Emotion with tailwind macro (WIP)
 - Jest
 - Eslint
 - Prettier
