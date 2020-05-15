@@ -8,7 +8,7 @@ I don't want to spend much time with the initial setup for a React app, so this 
 
 - Typescript
 - TailwindCSS
-- Emotion with tailwind macro (WIP)
+- Emotion with tailwind macro
 - Jest
 - Eslint
 - Prettier

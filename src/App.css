@@ -1,9 +1,0 @@
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-/* purgecss end ignore */
-@tailwind utilities;
-
-main {
-    @apply w-1/2 text-center my-0 mx-auto text-xl;
-}

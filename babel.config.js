@@ -21,11 +21,12 @@ module.exports = (api) => {
             '@babel/react',
         ],
         plugins: [
-            "macros",
+            'babel-plugin-macros',
             'emotion',
+            '@babel/plugin-transform-react-jsx',
             '@babel/proposal-class-properties',
             '@babel/proposal-object-rest-spread',
-            !api.env('production') && 'react-refresh/babel',
+            api.env('development') && 'react-refresh/babel',
         ].filter(Boolean),
     };
 };

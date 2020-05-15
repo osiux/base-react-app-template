@@ -6,6 +6,17 @@ const commonConfig = require('./webpack.config.common');
 
 module.exports = merge(commonConfig, {
     mode: 'production',
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: 'all',
+                },
+            },
+        },
+    },
     module: {
         rules: [
             {
