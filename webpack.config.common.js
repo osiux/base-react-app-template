@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
-    entry: ['./src/index.tsx'],
+    entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
@@ -24,5 +24,10 @@ module.exports = {
             },
         ],
     },
-    plugins: [new HtmlWebpackPlugin(), new ForkTsCheckerWebpackPlugin()],
+    plugins: [
+        new HtmlWebpackPlugin({
+            scriptLoading: 'defer',
+        }),
+        new ForkTsCheckerWebpackPlugin(),
+    ],
 };
