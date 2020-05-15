@@ -1,9 +1,14 @@
 module.exports = {
+    roots: ['<rootDir>'],
+    moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
     clearMocks: true,
     collectCoverage: false,
     coverageDirectory: 'coverage',
     coveragePathIgnorePatterns: ['/node_modules/'],
-    setupFilesAfterEnv: ['./jest.setup.js'],
+    setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
     transformIgnorePatterns: ['/node_modules/'],
     snapshotSerializers: ['jest-emotion'],
+    moduleNameMapper: {
+        '^@app(.*)$': '<rootDir>/src/$1',
+    },
 };

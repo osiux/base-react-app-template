@@ -17,7 +17,12 @@
         // React support
         "jsx": "react",
         // Allow default imports from modules with no default export.
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "@app/*": ["./src/*"]
+        }
     },
-    "include": ["src"]
+    "include": ["src", "__tests__"],
+    "exclude": ["node_modules", "dist"]
 }
