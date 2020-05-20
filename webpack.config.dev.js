@@ -8,8 +8,12 @@ const commonConfig = require('./webpack.config.common');
 
 module.exports = merge(commonConfig, {
     mode: 'development',
+    output: {
+        publicPath: '/',
+    },
     devServer: {
         hot: true,
+        historyApiFallback: true,
     },
     module: {
         rules: [
