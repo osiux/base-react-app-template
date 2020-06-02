@@ -1,7 +1,7 @@
 {
-    "name": "base-react-app",
+    "name": "@osiux/react-app-template",
     "version": "0.0.1",
-    "description": "Base React Application",
+    "description": "Base React Application (Typescript, Emotion, Tailwind)",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/osiux/base-react-app.git"
@@ -12,7 +12,13 @@
         "url": "https://github.com/osiux/base-react-app/issues"
     },
     "homepage": "https://github.com/osiux/base-react-app#readme",
-    "private": true,
+    "keywords": [
+        "react",
+        "typescript",
+        "emotion",
+        "tailwind",
+        "template"
+    ],
     "browserslist": [
         "defaults"
     ],
@@ -90,7 +96,6 @@
         "postcss-loader": "^3.0.0",
         "react-refresh": "^0.8.2",
         "rimraf": "^3.0.2",
-        "style-loader": "^1.2.1",
         "tailwindcss": "^1.4.6",
         "twin.macro": "^1.0.0",
         "typescript": "^3.9.2",
